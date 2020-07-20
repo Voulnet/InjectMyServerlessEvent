@@ -9,7 +9,7 @@ logger=logging.getLogger(__name__)
 
 
 def lambda_handler(event, context):
-    logger.setLevel(logging.DEBUG)
+	logger.setLevel(logging.DEBUG)
 	eventname = event['detail']['eventName']
 	requestParameters = event['detail']['requestParameters']
 
