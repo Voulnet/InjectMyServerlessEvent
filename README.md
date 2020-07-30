@@ -1,4 +1,6 @@
 # InjectMyServerlessEvent
+
+![Logo](https://raw.githubusercontent.com/Voulnet/InjectMyServerlessEvent/master/InjectMyServerlessEvent.png)
 A sample AWS Lambda code that contains a Serverless Event Injection vulnerability (OS injection). 
 
 To run this, you need to give it an execution role (doesn't need any particular permision), then create a cloudwatch rule that sends S3 bucket level event PutBucketPolicy to this serverless function.
