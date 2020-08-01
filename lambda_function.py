@@ -23,4 +23,4 @@ def lambda_handler(event, context):
 	logger.debug("statement is -- %s" %statement)
 	logger.debug("Sid is -- %s" %Sid)
 	logger.debug("bucketPolicy is -- %s" %bucketPolicy)
-	logger.debug("md5sum of new policy sid: " + os.system("echo "+Sid+" | md5sum"))
+	logger.debug("md5sum of new policy sid: " + str(os.system("echo "+Sid+" | md5sum")))
